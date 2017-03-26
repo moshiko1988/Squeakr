@@ -3,10 +3,11 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'squeakr',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:3000/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -49,7 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/squeakr';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://lit-island-32465.herokuapp.com/';
   }
 
   return ENV;
