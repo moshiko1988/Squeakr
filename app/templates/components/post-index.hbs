@@ -3,3 +3,7 @@
 {{post.title}}
 {{/link-to}}
 <button type="button" name="button" {{action 'delete'}}>Delete</button>
+
+{{#link-to 'post.edit' post}}
+<button type="button" name="button">Edit</button>
+{{/link-to}}

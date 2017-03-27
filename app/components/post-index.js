@@ -13,5 +13,9 @@ export default Ember.Component.extend({
       console.log('what?');
       this.sendAction('delete', this.get('post'));
     },
+    edit() {
+      console.log('post');
+      this.sendAction('edit', this.get('post'));
+    }
   }
 });

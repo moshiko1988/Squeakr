@@ -3,7 +3,8 @@
 
 {{#each model as | post |}}
   {{post-index post=post
-    delete='deletePost'}}
+    delete='deletePost'
+    }}
 
 {{/each}}
 {{#link-to 'create'}}create{{/link-to}}
