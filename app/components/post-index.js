@@ -9,5 +9,9 @@ export default Ember.Component.extend({
       this.get('post').rollbackAttributes();
       this.sendAction('cancel');
     },
+    delete() {
+      console.log('what?');
+      this.sendAction('delete', this.get('post'));
+    },
   }
 });

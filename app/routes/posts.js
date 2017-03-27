@@ -11,4 +11,10 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     }
   },
+  actions: {
+    deletePost(post) {
+      console.log('post');
+      post.destroyRecord();
+    }
+  }
 });

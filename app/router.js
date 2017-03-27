@@ -14,6 +14,7 @@ Router.map(function () {
   this.route('create');
   this.route('post', { path: '/posts/:post_id' });
 
+
 });
 
 export default Router;
