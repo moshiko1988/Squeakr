@@ -1,5 +1,5 @@
-{{#link-to 'post' post}}
-
+{{#link-to 'post' post class="posts-tab"}}
+{{post.user.id}}
 {{post.title}}
 {{/link-to}}
 <button type="button" name="button" {{action 'delete'}}>Delete</button>

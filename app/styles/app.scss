@@ -1,2 +1,19 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+.post-title{
+  list-style-type: none;
+  font-size: 2.5em;
+  text-align: center;
+}
+.post-body{
+  list-style-type: none;
+  font-size: 1.3em;
+  text-align: center;
+}
+.posts-tab{
+  list-style-type: none;
+  font-size: 2.3em;
+  display: block;
+  text-align: center;
+}

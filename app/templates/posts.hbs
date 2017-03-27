@@ -1,10 +1,12 @@
 {{outlet}}
 {{#link-to 'index'}}Back{{/link-to}}
 
-{{#each model as | post |}}
-  {{post-index post=post
-    delete='deletePost'
-    }}
+  {{#each model as | post |}}
+    {{post-index post=post
+      delete='deletePost'
+      }}
 
-{{/each}}
+  {{/each}}
+
+
 {{#link-to 'create'}}create{{/link-to}}
