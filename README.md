@@ -24,14 +24,14 @@ A user should be able to see other users posts
 A user should be able to delete and edit his posts
 
 
-# Links to site, repos, wireframes, and user stories
+### Links to site, repos, wireframes, and user stories
 
 - [Squealr](https://moshiko1988.github.io/squeakr/)
 - [User stories](https://github.com/moshiko1988/squeakr/issues)
 - [Back end repo](https://github.com/moshiko1988/squeake-api)
 - [Wireframes](https://imgur.com/a/0YOgI)
 
-# Resources used
+### Resources used
 - Ruby on Rails
 - Bootstrap
 - Ember

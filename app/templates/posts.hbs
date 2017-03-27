@@ -1,0 +1,11 @@
+{{outlet}}
+{{#link-to 'index'}}Back{{/link-to}}
+
+{{#each model as | post |}}
+<ul>
+  <li>{{post.title}}</li>
+  <li>{{post.body}}</li>
+</ul>
+
+{{/each}}
+{{#link-to 'create'}}create{{/link-to}}

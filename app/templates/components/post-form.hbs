@@ -1,0 +1,12 @@
+<form class="form-group" {{action 'save' on='submit'}}>
+  <label>Title</label>
+  {{input
+
+          class="input-group input-control"
+          value=post.title }}
+<label>Body</label>
+  {{input
+          class="input-group input-control"
+          value=post.body }}
+    <button type="submit" name="button">POST</button>
+</form>
