@@ -7,9 +7,12 @@ export default Ember.Route.extend({
 
   actions: {
     createPost (post) {
-      post.save();
-      console.log('post');
-    }
+      post.save()
+      .then(()=> this.transitionTo('posts'));
+    },
+    cancel () {
+      history.back();
+    },
   }
 
 });
