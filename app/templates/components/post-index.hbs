@@ -1,6 +1,4 @@
-{{#link-to 'post' post class="posts-tab"}}
-{{post.title}}
-{{/link-to}}
+
 
 {{#if post.editable}}
 <button type="button" name="button" {{action 'delete'}}>Delete</button>
@@ -9,3 +7,9 @@
 <button type="button" name="button">Edit</button>
 {{/link-to}}
 {{/if}}
+{{#link-to 'post' post class="posts-tab"}}
+<ul class="list-group">
+  <li class="list-group-item active">{{post.title}}</li>
+
+</ul>
+{{/link-to}}

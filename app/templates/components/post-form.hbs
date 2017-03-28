@@ -1,13 +1,15 @@
 <form class="form-group" {{action 'save' on='submit'}}>
   <label>Title</label>
   {{input
-
+          autoresize=true
+          required="required"
           class="input-group input-control"
           value=post.title }}
 <label>Body</label>
-  {{input
-          class="input-group input-control"
-          value=post.body }}
+  {{textarea class="form-control" rows="3"
+            required="required"
+            value=post.body }}
+        <br>
     <button type="submit" name="button">POST</button>
     <button type="button" {{action 'cancel'}}>Cancel</button>
 </form>
