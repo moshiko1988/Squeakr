@@ -15,10 +15,8 @@ Router.map(function () {
   this.route('post', { path: '/posts/:post_id' }, function() {
     this.route('edit');
     this.route('comments');
-    // this.route('comment-new');
   });
   this.route('comment-new', { path: '/posts/:post_id/comments/new'});
-
 });
 
 export default Router;
