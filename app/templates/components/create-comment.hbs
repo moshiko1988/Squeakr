@@ -1,5 +1,6 @@
-{{#each comments as |comment|}}
-  <li>
-    <h3>{{comment.body}}</h3>
-  </li>
-{{/each}}
+
+
+<form {{action 'createComment' on='submit'}} >
+  {{input placeholder="Comment..."
+          value=comment.body}}
+</form>

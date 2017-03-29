@@ -1,15 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  auth: Ember.inject.service(),
-  isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
-  model() {
-    if (this.get('isAuthenticated')) {
 
-      return this.get('store').findAll('post');
-    } else {
-      this.transitionTo('index');
-    }
+  model() {
+      let store = this.get('store');
+      store.unloadAll('post');
+      return store.findAll('post');
+
   },
   actions: {
     deletePost(post) {

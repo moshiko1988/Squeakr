@@ -2,7 +2,7 @@
 
 
 
-{{outlet}}
+
 <div class="panel panel-primary">
   <div class="panel-body">
     <li class='post-title'>{{model.title}}</li>
@@ -11,3 +11,16 @@
   <div class="panel-footer"><li class='post-body'>{{model.body}}</li></div>
 
 </div>
+<h1>{{post.id}} nope</h1>
+<h1>{{model.id}}</h1>
+
+
+{{#link-to 'comment-new' model}}Comment Here{{/link-to}}
+
+
+
+{{#each model.comments as | comment |}}
+
+  <div class="panel-footer"><li class='post-body'>{{comment.body}}</li></div>
+{{/each}}
+{{outlet}}
