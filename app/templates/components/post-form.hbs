@@ -1,15 +1,24 @@
-<form class="form-group" {{action 'save' on='submit'}}>
+<p class="post-form-header">Post here :</p>
+
+<div class="comment-wrapper">
+<form {{action 'save' on='submit'}}>
   <label>Title</label>
-  {{input
+  {{input placeholder="Title"
+          maxlength="60"
           autoresize=true
           required="required"
           class="input-group input-control"
           value=post.title }}
-<label>Body</label>
-  {{textarea class="form-control" rows="3"
-            required="required"
-            value=post.body }}
-        <br>
-    <button type="submit" name="button">POST</button>
-    <button type="button" {{action 'cancel'}}>Cancel</button>
+
+  <label>Body</label>
+  {{textarea placeholder="Body"
+             maxlength="500"
+             class="form-control"
+             rows="3" required="required"
+             value=post.body }}
+
+  <br>
+  <button type="submit" name="button">POST</button>
+  <button type="button" {{action 'cancel'}}>Cancel</button>
 </form>
+</div>

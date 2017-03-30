@@ -1,12 +1,11 @@
 {{outlet}}
-{{#link-to 'index'}}Back{{/link-to}}
+
+<p class="post-form-header">Posts :</p>
 
   {{#each model as | post |}}
+
     {{post-index post=post
       delete='deletePost'
       }}
 
   {{/each}}
-
-
-{{#link-to 'create'}}create{{/link-to}}

@@ -1,6 +1,10 @@
-<h1>POSTS</h1>
 
-<div class="panel panel-primary">
+<div class="post-container">
+  <p class="post-form-title">{{model.title}} </p>
+  <p class="post-form-body">{{model.body}}</p>
+</div>
+<p class="post-form-comment-header">Comments</p>
+{{!-- <div class="panel panel-primary">
   <div class="panel-body">
     <li class='post-title'>{{model.title}}</li>
 
@@ -8,20 +12,17 @@
   <div class="panel-footer">
     <li class='post-body'>{{model.body}}</li>
   </div>
+</div> --}}
 
-</div>
-
-{{#link-to 'comment-new' model}}Comment Here{{/link-to}}
+{{#link-to 'comment-new' model}}<button class="btn btn-defult">Comment Here</button>{{/link-to}}
 
 {{#each model.comments as | comment |}}
-
 {{comment-index
   comment=comment
   delete='delete'
   }}
-
-  <div class="panel-footer">
-    <li class='post-body'>{{comment.body}}</li>
+  <div class="post-form-comment">
+    <p class='post-body'>{{comment.body}}</p>
   </div>
 {{/each}}
 {{outlet}}

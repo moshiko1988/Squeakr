@@ -13,7 +13,7 @@ export default Ember.Route.extend({
         credentials.email = null;
         credentials.passwordConfirmation = null;
         credentials.fullName = null;
-        this.transitionTo('users');
+        this.transitionTo('index');
       })
       .then(() => {
         this.get('flashMessages')

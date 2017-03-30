@@ -1,11 +1,11 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "posts"}}Feed{{/link-to}}</li>
+        <li>{{#link-to "posts"}}My Feed{{/link-to}}</li>
         <li>{{#link-to "create"}}Create a post{{/link-to}}</li>
         {{/if}}
       </ul>

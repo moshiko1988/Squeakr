@@ -1,5 +1,13 @@
+
+<p class="post-form-header">Comment Here :</p>
+
+<div class="comment-wrapper">
 <form {{action 'createComment' on='submit'}}>
-  {{input placeholder="Comment..." value=newComment.body required="required"}}
+  {{input placeholder="Comment"
+          maxlength="500"
+          value=newComment.body
+          required="required"}}
   <button type="submit" name="button">POST</button>
   <button type="button" {{action 'cancel'}}>Cancel</button>
 </form>
+</div>
