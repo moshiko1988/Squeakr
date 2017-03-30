@@ -11,6 +11,10 @@ export default Ember.Route.extend({
       comment.save();
     },
 
+      delete(comment) {
+        console.log('Routed', comment);
+        comment.destroyRecord();
+  }
   }
 
 });
