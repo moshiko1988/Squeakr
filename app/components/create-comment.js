@@ -12,5 +12,9 @@ export default Ember.Component.extend({
       this.sendAction('createComment', data);
       this.set('newComment.body', null);
     },
+    cancel() {
+    history.back();
+    this.set('newComment.body', null);
+    },
   }
 });

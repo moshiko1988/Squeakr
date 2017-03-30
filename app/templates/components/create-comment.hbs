@@ -1,6 +1,5 @@
-
-
-<form {{action 'createComment' on='submit'}} >
-  {{input placeholder="Comment..."
-          value=newComment.body}}
+<form {{action 'createComment' on='submit'}}>
+  {{input placeholder="Comment..." value=newComment.body}}
+  <button type="submit" name="button">POST</button>
+  <button type="button" {{action 'cancel'}}>Cancel</button>
 </form>

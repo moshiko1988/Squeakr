@@ -10,5 +10,8 @@ export default Ember.Route.extend({
       comment.save()
       .then(()=>history.back());
     },
+    cancel () {
+      history.back();
+    },
   }
 });
