@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       let data = this.get('newComment');
       data.post = this.get('post');
       this.sendAction('createComment', data);
-      this.set('comment', null);
+      this.set('newComment.body', null);
     },
   }
 });

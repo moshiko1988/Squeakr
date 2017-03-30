@@ -7,7 +7,8 @@ export default Ember.Route.extend({
   actions: {
     createComment(data) {
       const comment = this.get('store').createRecord('comment', data);
-      comment.save();
+      comment.save()
+      .then(()=>history.back());
     },
   }
 });
