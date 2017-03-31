@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/squeakr';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://lit-island-32465.herokuapp.com/';
+    ENV.apiHost = 'https://lit-island-32465.herokuapp.com';
   }
 
   return ENV;
