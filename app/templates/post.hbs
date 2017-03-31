@@ -4,25 +4,18 @@
   <p class="post-form-body">{{model.body}}</p>
 </div>
 <p class="post-form-comment-header">Comments</p>
-{{!-- <div class="panel panel-primary">
-  <div class="panel-body">
-    <li class='post-title'>{{model.title}}</li>
-
-  </div>
-  <div class="panel-footer">
-    <li class='post-body'>{{model.body}}</li>
-  </div>
-</div> --}}
-
-{{#link-to 'comment-new' model}}<button class="btn btn-defult">Comment Here</button>{{/link-to}}
-
+{{#if isAuthenticated}}
+{{#link-to 'comment-new' model}}<p class="comment-button">Add comment</p>{{/link-to}}
+{{/if}}
 {{#each model.comments as | comment |}}
-{{comment-index
-  comment=comment
-  delete='delete'
-  }}
-  <div class="post-form-comment">
-    <p class='post-body'>{{comment.body}}</p>
-  </div>
+<div class="post-comment-div">
+  <p class='post-form-comment'>{{comment.body}}</p>
+  {{comment-index
+    comment=comment
+    delete='delete'
+    }}
+</div>
+
+
 {{/each}}
 {{outlet}}

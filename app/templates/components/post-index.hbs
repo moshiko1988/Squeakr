@@ -1,17 +1,12 @@
 <div class="index-post">
-{{#if post.editable}}
-<button type="button" name="button" {{action 'delete'}}>Delete</button>
-
-{{#link-to 'post.edit' post}}
-<button type="button" name="button">Edit</button>
-{{/link-to}}
-{{/if}}
-
 {{#link-to 'post' post class="posts-tab"}}
-<ul class="list-group">
-  <li class="list-group-item active">{{post.title}}</li>
-  <li class="list-group-item">{{post.body}}</li>
-</ul>
-
+<p class="posts-form-title">{{post.title}} </p>
+<p class="posts-form-body">{{post.body}}</p>
 {{/link-to}}
+{{#if post.editable}}
+{{#link-to 'post.edit' post}}
+<p class="comment-button-edit">Edit</p>
+{{/link-to}}
+<p class="comment-button-delete" {{action 'delete'}}>Delete</p>
+{{/if}}
 </div>
