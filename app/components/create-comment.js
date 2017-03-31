@@ -4,7 +4,6 @@ export default Ember.Component.extend({
   newComment:{
     body: null,
   },
-
   actions: {
     createComment() {
       let data = this.get('newComment');

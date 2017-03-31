@@ -1,117 +1,128 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
-@import url('https://fonts.googleapis.com/css?family=Bangers|Oswald:200,400');
-//
-// .post-index-wrapper {
-//   text-align: center;
-// }
+@import url( 'https://fonts.googleapis.com/css?family=Bangers|Oswald:200,400'); //
+
+
 body {
   margin-top: 70px;
   margin-bottom: 170px;
 }
-.welcome-page{
+
+.welcome-page {
   font-family: 'Bangers', cursive;
   font-size: 3.4em;
   text-align: center;
   text-decoration: underline;
   margin-left: auto;
-      margin-right: auto;
+  margin-right: auto;
 }
-.main-pic{
+
+.main-pic {
   margin-left: auto;
-      margin-right: auto;
-      width: 1em
+  margin-right: auto;
+  width: 1em;
 }
-.post-form-header{
-font-family: 'Bangers', cursive;
-font-size: 4em;
+
+.post-form-header {
+  font-family: 'Bangers', cursive;
+  font-size: 4em;
 }
-.post-form-title{
+
+.post-form-title {
   font-family: 'Bangers', cursive;
   font-size: 2.4em;
   text-align: center;
   text-decoration: underline;
 }
-.post-form-body{
+
+.post-form-body {
   font-family: 'Bangers', cursive;
   font-size: 2em;
   text-align: center;
 }
-.post-container{
+
+.post-container {
   border-bottom: 1px dotted #ff0000;
   margin-bottom: 50px;
   margin-top: 70px;
-
 }
-.post-form-comment-header{
+
+.post-form-comment-header {
   font-family: 'Bangers', cursive;
   font-size: 2.4em;
   text-align: center;
   color: #404040;
   text-decoration: underline;
 }
-.post-form-comment{
+
+.post-form-comment {
   font-family: 'Bangers', cursive;
   font-size: 2em;
   text-align: center;
   color: #404040;
-
-
 }
-.post-comment-div{
-    border-bottom: 1px dotted #997736;
-    margin: 30px 0;
+
+.post-comment-div {
+  border-bottom: 1px dotted #997736;
+  margin: 30px 0;
 }
-.post-form-header:hover{
+
+.post-form-header:hover {
   color: red;
-
 }
-.comment-button{
+
+.comment-button {
   font-family: 'Bangers', cursive;
   font-size: 1.7em;
   text-align: center;
 }
-.comment-button-delete{
+
+.comment-button-delete {
   font-family: 'Bangers', cursive;
   font-size: 1.3em;
   text-align: center;
   color: red;
-
 }
-.comment-button-edit{
+
+.comment-button-edit {
   font-family: 'Bangers', cursive;
   font-size: 1.3em;
   text-align: center;
   color: grey;
-
 }
-.comment-button-delete:hover{
+
+.comment-button-delete:hover {
   background-color: black;
   // margin: 0 470px;
 }
-.posts-tab{
-color: black;
-font-family: 'Oswald', sans-serif;
+
+.posts-tab {
+  color: black;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.6em;
 }
-.posts-tab:hover{
+
+.posts-tab:hover {
   text-decoration: none;
   color: black;
 }
-.posts-form-title{
+
+.posts-form-title {
   font-family: 'Bangers', cursive;
   font-size: 1.4em;
   text-align: center;
   text-decoration: underline;
 }
-.posts-form-body{
-font-family: 'Bangers', cursive;
-font-size: 1em;
-text-align: center;
-text-decoration: underline;
-border-bottom: 1px dotted black;
+
+.posts-form-body {
+  font-family: 'Bangers', cursive;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+  border-bottom: 1px dotted black;
 }
-.index-post{
+
+.index-post {
   margin: 30px 0;
 }
 

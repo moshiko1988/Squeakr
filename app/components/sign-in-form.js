@@ -5,11 +5,11 @@ export default Ember.Component.extend({
   classNames: ['form-horizontal'],
 
   actions: {
-    submit () {
+    submit() {
       this.sendAction('submit', this.get('credentials'));
     },
 
-    reset () {
+    reset() {
       this.set('credentials', {});
     },
   },

@@ -5,19 +5,19 @@ export default Ember.Route.extend({
   auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
 
-  model () {
+  model() {
     return RSVP.Promise.resolve({});
   },
 
   actions: {
-    signIn (credentials) {
+    signIn(credentials) {
       return this.get('auth').signIn(credentials)
-      .then(() => this.transitionTo('index'))
-      .then(() => this.get('flashMessages').success('Thanks for signing in!'))
-      .catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem. Please try again.');
-      });
+        .then(() => this.transitionTo('index'))
+        .then(() => this.get('flashMessages').success('Thanks for signing in!'))
+        .catch(() => {
+          this.get('flashMessages')
+            .danger('There was a problem. Please try again.');
+        });
     },
   },
 });

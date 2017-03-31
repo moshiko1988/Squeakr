@@ -5,9 +5,8 @@ export default Ember.Route.extend({
     return this.get('store').findRecord('post', params.post_id);
   },
 
-  actions:{
+  actions: {
     delete(comment) {
-      console.log('Routed', comment);
       comment.destroyRecord();
     }
   }

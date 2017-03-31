@@ -5,27 +5,27 @@ export default Ember.Route.extend({
   flashMessages: Ember.inject.service(),
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
 
-  model(){
-    if(!this.get('isAuthenticated')){
+  model() {
+    if (!this.get('isAuthenticated')) {
       this.transitionTo('index');
     }
   },
   actions: {
-    changePassword (passwords) {
+    changePassword(passwords) {
       this.get('auth').changePassword(passwords)
-      .then(() => this.get('auth').signOut())
-      .then(() => this.transitionTo('sign-in'))
-      .then(() => {
-        this.get('flashMessages')
-        .success('Successfully changed your password!');
-      })
-      .then(() => {
-        this.get('flashMessages').warning('You have been signed out.');
-      })
-      .catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem. Please try again.');
-      });
+        .then(() => this.get('auth').signOut())
+        .then(() => this.transitionTo('sign-in'))
+        .then(() => {
+          this.get('flashMessages')
+            .success('Successfully changed your password!');
+        })
+        .then(() => {
+          this.get('flashMessages').warning('You have been signed out.');
+        })
+        .catch(() => {
+          this.get('flashMessages')
+            .danger('There was a problem. Please try again.');
+        });
     },
   },
 });

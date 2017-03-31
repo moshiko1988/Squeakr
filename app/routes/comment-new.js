@@ -8,13 +8,12 @@ export default Ember.Route.extend({
     createComment(data) {
       const comment = this.get('store').createRecord('comment', data);
       comment.save()
-      .then(()=>history.back());
+        .then(() => history.back());
     },
-    cancel () {
+    cancel() {
       history.back();
     },
     delete(comment) {
-      console.log('Routed', comment);
       comment.destroyRecord();
     }
   }

@@ -6,15 +6,13 @@ export default Ember.Route.extend({
   },
   actions: {
     createComment(data) {
-      console.log('HI');
       let comment = this.get('store').createRecord('comment', data);
       comment.save();
     },
 
-      delete(comment) {
-        console.log('Routed', comment);
-        comment.destroyRecord();
-  }
+    delete(comment) {
+      comment.destroyRecord();
+    }
   }
 
 });

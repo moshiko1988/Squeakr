@@ -8,7 +8,7 @@ export default AjaxService.extend({
 
   auth: Ember.inject.service(),
   headers: Ember.computed('auth.credentials.token', {
-    get () {
+    get() {
       let headers = {};
       const token = this.get('auth.credentials.token');
       if (token) {
