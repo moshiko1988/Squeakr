@@ -4,9 +4,9 @@
   <p class="post-form-body">{{model.body}}</p>
 </div>
 <p class="post-form-comment-header">Comments</p>
-{{#if isAuthenticated}}
+
 {{#link-to 'comment-new' model}}<p class="comment-button">Add comment</p>{{/link-to}}
-{{/if}}
+
 {{#each model.comments as | comment |}}
 <div class="post-comment-div">
   <p class='post-form-comment'>{{comment.body}}</p>
