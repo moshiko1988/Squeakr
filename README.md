@@ -36,7 +36,7 @@ A user should be able to delete a post
 - [User stories](https://github.com/moshiko1988/squeakr/issues)
 - [Back end repo](https://github.com/moshiko1988/squeake-api)
 - [Wireframes](https://imgur.com/a/0YOgI)
-- [ERD](http://i.imgur.com/r5Oit6H.png)
+- [ERD](http://imgur.com/mPuke9q)
 ![screenshot](http://i.imgur.com/eRqFhpk.png)
 
 ### Resources used
