@@ -2,37 +2,9 @@
 
 Squeakr is a Web app that allows you to posts and share any story you like
 
-### User stories:
-
-#### Auth:
-A user should be able to Sign Up
-
-A user should be able to Sign In
-
-A user should be able to Change Password
-
-A user should be able to Sign Out
-
-#### Posts:
-
-A user should be able to post
-
-A user should be able to see his posts
-
-A user should be able to see other users posts
-
-A user should be able to delete and edit his posts
-
-#### comments:
-
-A user should be able to comment on a post
-
-A user should be able to delete a post
-
-
 ### Links to site, repos, wireframes, and user stories
 
-- [Squealr](https://moshiko1988.github.io/squeakr/)
+- [Squeakr](https://moshiko1988.github.io/squeakr/)
 - [User stories](https://github.com/moshiko1988/squeakr/issues)
 - [Back end repo](https://github.com/moshiko1988/squeake-api)
 - [Wireframes](https://imgur.com/a/0YOgI)
@@ -62,6 +34,35 @@ Then I worked on the back end to build the general stracture of the app and the 
 ## Installation instructions
 - clone and install dependencies
 - ```npm install && bower install```
+
+### User stories:
+
+#### Auth:
+A user should be able to Sign Up
+
+A user should be able to Sign In
+
+A user should be able to Change Password
+
+A user should be able to Sign Out
+
+#### Posts:
+
+A user should be able to post
+
+A user should be able to see his posts
+
+A user should be able to see other users posts
+
+A user should be able to delete and edit his posts
+
+#### comments:
+
+A user should be able to comment on a post
+
+A user should be able to delete a post
+
+
 
 ## Squeakr to be
 
